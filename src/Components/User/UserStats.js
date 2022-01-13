@@ -24,8 +24,7 @@ const UserStatic = () => {
     return (
         <React.Suspense fallback={<div></div>}>
             <Head title="Estatísticas" />
-            <UserStatsGraphs data={data}/>
-            Estatistica
+            <UserStatsGraphs data={data}/>           
         </React.Suspense>
     )
     else return null

@@ -13,7 +13,7 @@ const UserStatsGraphs = ({ data }) => {
               y: Number(item.acessos)
           }
       })
-    // setTotal(data.map(({acessos}) => Number(acessos)).reduce((a, b) => a + b))
+    setTotal(data.map(({acessos}) => Number(acessos)).reduce((a, b) => a + b))
     setGraph(graphData)
   }, [data]);
 
